@@ -2,11 +2,12 @@
 <html>
 <head>
 <meta charset='utf-8' />
-<link href='../dist/fullcalendar.css' rel='stylesheet' />
-<link href='../dist/fullcalendar.print.css' rel='stylesheet' media='print' />
-<script src='../lib/moment/moment.js'></script>
-<script src='../lib/jquery/dist/jquery.js'></script>
-<script src='../dist/fullcalendar.js'></script>
+<link href='../fullcalendar.css' rel='stylesheet' />
+<link href='../fullcalendar.print.css' rel='stylesheet' media='print' />
+<script src='../lib/moment.min.js'></script>
+<script src='../lib/jquery.min.js'></script>
+<script src='../lib/jquery-ui.custom.min.js'></script>
+<script src='../fullcalendar.min.js'></script>
 <script>
 
 	$(document).ready(function() {
@@ -17,9 +18,8 @@
 				center: 'title',
 				right: 'month,agendaWeek,agendaDay'
 			},
-			defaultDate: '2016-01-12',
+			defaultDate: '2014-06-12',
 			editable: true,
-			eventLimit: true, // allow "more" link when too many events
 			events: {
 				url: 'php/get-events.php',
 				error: function() {
@@ -63,9 +63,8 @@
 	}
 
 	#calendar {
-		max-width: 900px;
+		width: 900px;
 		margin: 40px auto;
-		padding: 0 10px;
 	}
 
 </style>
